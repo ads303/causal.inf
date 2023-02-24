@@ -26,7 +26,7 @@ For example, if you have a causal variable X1 and an effect variable Y, running 
 
 You can use the estimated causal effects to make inferences about the causal relationships between variables in your data. If the p-value is less than 0.05 (or whatever you choose to set as your alpha value for the purposes of your task), you can reject the null hypothesis that there is no causal effect and conclude that there is evidence of a causal relationship between the causal variable and the effect variable. 
 
-When using the `causal.inf` package, it's important to keep in mind that additional methods and analyses may be needed to fully understand the causal relationships in your data. This tool is just meant to be an introductory, exploratory guide to your data. 
+When using the `causal.inf` package, it's important to keep in mind that additional methods and analyses may be needed to fully understand the causal relationships in your data. This tool is just meant to be an introductory, exploratory guide to your data. Other causal inference packages such as [dagitty](https://cran.r-project.org/web/packages/dagitty/index.html) are far more comprehensive, but don't offer backdoor adjustment as part of their causal inference framework. 
 
 If you have any inquiries or concerns, please email me at [ads303@pitt.edu](mailto:ads303@pitt.edu)
 
