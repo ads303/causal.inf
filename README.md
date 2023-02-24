@@ -7,7 +7,7 @@ The backdoor adjustment method involves controlling for confounding variables by
 
 <img width="1103" alt="image" src="https://user-images.githubusercontent.com/108133717/221062053-6ea6a5be-82ec-4d16-9e14-a791beea5551.png">
 
-(excerpted from a [CMU Statistics Lecture](https://www.stat.cmu.edu/~cshalizi/350/lectures/31/lecture-31.pdf)
+(excerpted from a [CMU Statistics Lecture])(https://www.stat.cmu.edu/~cshalizi/350/lectures/31/lecture-31.pdf)
 
 In this package, I use a linear regression model to estimate the conditional distribution of an outcome variable given input causal variables and confounding variables. By controlling for the confounding variables in this way, we are able to estimate the causal effect of the input variables on the outcome variable while minimizing confounding bias. 
 
