@@ -5,6 +5,17 @@ The backdoor adjustment method is a fundamental concept in causal inference.
 
 The backdoor adjustment method involves controlling for confounding variables by conditioning on them in order to eliminate their effects on the causal relationship between the treatment and outcome variables. This can be achieved using various methods, such as regression or propensity score matching.
 
+If we want to know the effect of X on Y and have a set of variables S as the
+control, then S satisfies the back-door criterion if (i) S blocks every path from
+X to Y that has an arrow into X (“blocks the back door”), and (ii) no node in
+S is a descendant of X. Then:
+
+Pr (Y |do(X = x)) = X
+s
+Pr (Y |X = x, S = s) Pr (S = s) (1)
+Notice that all the items on the right-hand side are observational conditional
+probabilities, not counterfactuals.
+
 <img width="1103" alt="image" src="https://user-images.githubusercontent.com/108133717/221062053-6ea6a5be-82ec-4d16-9e14-a791beea5551.png">
 
 (excerpted from a [CMU Statistics Lecture](https://www.stat.cmu.edu/~cshalizi/350/lectures/31/lecture-31.pdf))
