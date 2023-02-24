@@ -1,0 +1,26 @@
+---
+title: "example"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{example}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(causal.inf)
+```
+
+```{r}
+#This isn't a real-world causal effect that is meaningful. It is intended to show the usage of the function and its parameters. 
+mtcars <- mtcars
+estimate_causal_effect(mtcars, x = "mpg", y = "qsec", confounders = "hp", binary_vars = c("cyl", "vs", "am", "gear", "carb"))
+```
+
