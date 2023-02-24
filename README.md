@@ -28,5 +28,5 @@ You can use the estimated causal effects to make inferences about the causal rel
 
 When using the `causal.inf` package, it's important to keep in mind that additional methods and analyses may be needed to fully understand the causal relationships in your data. This tool is just meant to be an introductory, exploratory guide to your data. 
 
-If you have any concerns, please email me at mailto:ads303@pitt.edu 
+If you have any inquiries or concerns, please email me at [ads303@pitt.edu](mailto:ads303@pitt.edu)
 
