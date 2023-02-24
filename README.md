@@ -9,9 +9,9 @@ The backdoor adjustment method involves controlling for confounding variables by
 
 (excerpted from a [CMU Statistics Lecture](https://www.stat.cmu.edu/~cshalizi/350/lectures/31/lecture-31.pdf))
 
-In this package, I use a linear regression model to estimate the conditional distribution of an outcome variable given input causal variables and confounding variables. By controlling for the confounding variables in this way, we are able to estimate the causal effect of the input variables on the outcome variable while minimizing confounding bias. 
+In this package, I use a linear regression model to estimate the conditional distribution of an outcome variable given input causal variables and confounding variables. By controlling for the confounding variables in this way, we are able to estimate the causal effect of the input variables on the outcome variable while minimizing confounding bias. This is primarily the utility of the `estimate_causal_effect` in the package. 
 
-The `estimate_causal_effects` function returns a list of the estimated causal effects of each causal variable on the effect variable. Each element of the list corresponds to a single causal variable and contains the estimated causal effect, along with its standard error, 95% confidence interval, and p-value.
+The `estimate_causal_effects` function, on the other hand, is a less-specific estimator that returns a list of the estimated causal effects of each causal variable on the effect variable. Each element of the list corresponds to a single causal variable and contains the estimated causal effect, along with its standard error, 95% confidence interval, and p-value.
 
 For example, if you have a causal variable X1 and an effect variable Y, running estimate_causal_effects will return a list with a single element. This element will contain the estimated causal effect of X1 on Y, along with other information such as the standard error, 95% confidence interval, and p-value.
 
