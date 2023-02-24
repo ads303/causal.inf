@@ -11,7 +11,8 @@ X to Y that has an arrow into X (“blocks the back door”), and (ii) no node i
 S is a descendant of X.** Then:
 
 $Pr$ $(Y |do(X = x))$ $=$ $\sum_{s}$
-$Pr (Y |X = x, S = s)$ $Pr (S = s)$ (1)
+$Pr (Y |X = x, S = s)$ $Pr (S = s)$
+
 Notice that all the items on the right-hand side are observational conditional
 probabilities, not counterfactuals.
 
